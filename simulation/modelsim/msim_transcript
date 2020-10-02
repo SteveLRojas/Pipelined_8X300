@@ -1,0 +1,90 @@
+# Reading C:/altera/10.0/modelsim_ase/tcl/vsim/pref.tcl 
+# do 8X300_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\10.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\10.0\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+C:/Documents\ and\ Settings/Admin/My\ Documents/Pipelined_8X300_gen2 {C:/Documents and Settings/Admin/My Documents/Pipelined_8X300_gen2/toplevel.v}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module N8X300
+# -- Compiling module right_rotate
+# -- Compiling module mask_unit
+# -- Compiling module ALU
+# -- Compiling module IO_latch
+# -- Compiling module shift_merge
+# -- Compiling module reg_file
+# -- Compiling module decode_unit
+# -- Compiling module PC
+# -- Compiling module hazard_unit
+# 
+# Top level modules:
+# 	N8X300
+# 
+# vlog -vlog01compat -work work +incdir+C:/Documents\ and\ Settings/Admin/My\ Documents/Pipelined_8X300_gen2 {C:/Documents and Settings/Admin/My Documents/Pipelined_8X300_gen2/IO.v}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module IO_mod
+# -- Compiling module testmem
+# 
+# Top level modules:
+# 	IO_mod
+# 	testmem
+# vlog -vlog01compat -work work +incdir+C:/Documents\ and\ Settings/Admin/My\ Documents/Pipelined_8X300_gen2 {C:/Documents and Settings/Admin/My Documents/Pipelined_8X300_gen2/ROM.v}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module ROM_high
+# -- Compiling module ROM_low
+# 
+# Top level modules:
+# 	ROM_high
+# 	ROM_low
+# vlog -vlog01compat -work work +incdir+C:/Documents\ and\ Settings/Admin/My\ Documents/Pipelined_8X300_gen2 {C:/Documents and Settings/Admin/My Documents/Pipelined_8X300_gen2/testbench.v}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module Testbench
+# 
+# Top level modules:
+# 	Testbench
+# vlog -vlog01compat -work work +incdir+C:/Documents\ and\ Settings/Admin/My\ Documents/Pipelined_8X300_gen2 {C:/Documents and Settings/Admin/My Documents/Pipelined_8X300_gen2/toplevel.v}
+# Model Technology ModelSim ALTERA vlog 6.5e Compiler 2010.02 Feb 27 2010
+# -- Compiling module N8X300
+# -- Compiling module right_rotate
+# -- Compiling module mask_unit
+# -- Compiling module ALU
+# -- Compiling module IO_latch
+# -- Compiling module shift_merge
+# -- Compiling module reg_file
+# -- Compiling module decode_unit
+# -- Compiling module PC
+# -- Compiling module hazard_unit
+# 
+# Top level modules:
+# 	N8X300
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L cycloneii_ver -L rtl_work -L work -voptargs="+acc" Testbench
+# vsim -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L cycloneii_ver -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Testbench 
+# Loading work.Testbench
+# Loading work.ROM_high
+# Loading work.ROM_low
+# Loading work.N8X300
+# Loading work.IO_latch
+# Loading work.reg_file
+# Loading work.right_rotate
+# Loading work.mask_unit
+# Loading work.ALU
+# Loading work.shift_merge
+# Loading work.PC
+# Loading work.decode_unit
+# Loading work.hazard_unit
+# Loading work.IO_mod
+# Loading work.testmem
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body
+# run 500 ps
