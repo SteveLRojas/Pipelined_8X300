@@ -5,9 +5,9 @@ Timing Analyzer Summary
 Type           : Worst-case tsu
 Slack          : N/A
 Required Time  : None
-Actual Time    : 7.164 ns
-From           : I[14]
-To             : decode_unit:decode_unit0|I_reg[14]
+Actual Time    : 7.147 ns
+From           : I[12]
+To             : decode_unit:decode_unit0|I_reg[12]
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -15,9 +15,9 @@ Failed Paths   : 0
 Type           : Worst-case tco
 Slack          : N/A
 Required Time  : None
-Actual Time    : 8.846 ns
-From           : PC:PC0|A_reg[1]
-To             : A[1]
+Actual Time    : 9.414 ns
+From           : shift_merge:shift_merge0|merge_reg[4]
+To             : n_IV_out[4]
 From Clock     : clk
 To Clock       : --
 Failed Paths   : 0
@@ -25,9 +25,9 @@ Failed Paths   : 0
 Type           : Worst-case th
 Slack          : N/A
 Required Time  : None
-Actual Time    : 1.062 ns
-From           : n_IV_in[2]
-To             : IV_in[2]
+Actual Time    : 0.119 ns
+From           : n_IV_in[0]
+To             : IV_in[0]
 From Clock     : --
 To Clock       : clk
 Failed Paths   : 0
@@ -35,9 +35,9 @@ Failed Paths   : 0
 Type           : Clock Setup: 'clk'
 Slack          : N/A
 Required Time  : None
-Actual Time    : 135.48 MHz ( period = 7.381 ns )
-From           : IO_latch:IO_latch0|altsyncram:LBA_reg[7]__1|altsyncram_vii1:auto_generated|ram_block1a0~portb_address_reg1
-To             : shift_merge:shift_merge0|merge_reg[5]
+Actual Time    : 134.64 MHz ( period = 7.427 ns )
+From           : decode_unit:decode_unit0|n_RB_r_reg
+To             : PC:PC0|A_reg[6]
 From Clock     : clk
 To Clock       : clk
 Failed Paths   : 0

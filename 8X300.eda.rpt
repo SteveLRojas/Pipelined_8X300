@@ -1,5 +1,5 @@
 EDA Netlist Writer report for 8X300
-Thu Oct 01 17:36:09 2020
+Sat Oct 03 15:48:36 2020
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -38,7 +38,7 @@ applicable agreement for further details.
 +------------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                             ;
 +--------------------------------+---------------------------------------+
-; EDA Netlist Writer Status      ; Successful - Thu Oct 01 17:36:09 2020 ;
+; EDA Netlist Writer Status      ; Successful - Sat Oct 03 15:48:36 2020 ;
 ; Revision Name                  ; 8X300                                 ;
 ; Top-level Entity Name          ; N8X300                                ;
 ; Family                         ; Cyclone II                            ;
@@ -107,7 +107,7 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II EDA Netlist Writer
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Thu Oct 01 17:36:07 2020
+    Info: Processing started: Sat Oct 03 15:48:34 2020
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off 8X300_gen2 -c 8X300
 Info: Generated files "8X300.vo" and "8X300_v.sdo" in directory "C:/Documents and Settings/Admin/My Documents/Pipelined_8X300_gen2/simulation/modelsim/" for EDA simulation tool
 Info: Generated files "8X300.vo" and "8X300_v.sdo" in directory "C:/Documents and Settings/Admin/My Documents/Pipelined_8X300_gen2/timing/primetime/" for EDA timing analysis tool
@@ -115,8 +115,8 @@ Warning: Expected ENABLE_CLOCK_LATENCY to be set to ON but is set to OFF
 Info: Generated PrimeTime Tcl script file C:/Documents and Settings/Admin/My Documents/Pipelined_8X300_gen2/timing/primetime/8X300_pt_v.tcl
 Info: Quartus II EDA Netlist Writer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 125 megabytes
-    Info: Processing ended: Thu Oct 01 17:36:09 2020
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Sat Oct 03 15:48:37 2020
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:02
 
 
