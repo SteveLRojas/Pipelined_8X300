@@ -1,5 +1,5 @@
 Analysis & Synthesis report for 8X300
-Sat Oct 03 15:48:02 2020
+Mon Oct 05 13:46:39 2020
 Quartus II Version 8.1 Build 163 10/28/2008 SJ Web Edition
 
 
@@ -45,13 +45,13 @@ applicable agreement for further details.
 +------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                 ;
 +------------------------------------+-----------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sat Oct 03 15:48:02 2020   ;
+; Analysis & Synthesis Status        ; Successful - Mon Oct 05 13:46:39 2020   ;
 ; Quartus II Version                 ; 8.1 Build 163 10/28/2008 SJ Web Edition ;
 ; Revision Name                      ; 8X300                                   ;
 ; Top-level Entity Name              ; N8X300                                  ;
 ; Family                             ; Cyclone II                              ;
-; Total logic elements               ; 615                                     ;
-;     Total combinational functions  ; 615                                     ;
+; Total logic elements               ; 600                                     ;
+;     Total combinational functions  ; 600                                     ;
 ;     Dedicated logic registers      ; 491                                     ;
 ; Total registers                    ; 491                                     ;
 ; Total pins                         ; 54                                      ;
@@ -166,16 +166,16 @@ applicable agreement for further details.
 +---------------------------------------------+-------+
 ; Resource                                    ; Usage ;
 +---------------------------------------------+-------+
-; Estimated Total logic elements              ; 615   ;
+; Estimated Total logic elements              ; 600   ;
 ;                                             ;       ;
-; Total combinational functions               ; 615   ;
+; Total combinational functions               ; 600   ;
 ; Logic element usage by number of LUT inputs ;       ;
-;     -- 4 input functions                    ; 249   ;
-;     -- 3 input functions                    ; 235   ;
-;     -- <=2 input functions                  ; 131   ;
+;     -- 4 input functions                    ; 246   ;
+;     -- 3 input functions                    ; 233   ;
+;     -- <=2 input functions                  ; 121   ;
 ;                                             ;       ;
 ; Logic elements by mode                      ;       ;
-;     -- normal mode                          ; 595   ;
+;     -- normal mode                          ; 580   ;
 ;     -- arithmetic mode                      ; 20    ;
 ;                                             ;       ;
 ; Total registers                             ; 491   ;
@@ -186,7 +186,7 @@ applicable agreement for further details.
 ; Total memory bits                           ; 32    ;
 ; Maximum fan-out node                        ; clk   ;
 ; Maximum fan-out                             ; 499   ;
-; Total fan-out                               ; 3294  ;
+; Total fan-out                               ; 3256  ;
 ; Average fan-out                             ; 2.82  ;
 +---------------------------------------------+-------+
 
@@ -196,7 +196,7 @@ applicable agreement for further details.
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                ; Library Name ;
 +-------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+------------------------------------------------------------------------------------+--------------+
-; |N8X300                                   ; 615 (175)         ; 491 (162)    ; 32          ; 0            ; 0       ; 0         ; 54   ; 0            ; |N8X300                                                                            ; work         ;
+; |N8X300                                   ; 600 (160)         ; 491 (162)    ; 32          ; 0            ; 0       ; 0         ; 54   ; 0            ; |N8X300                                                                            ; work         ;
 ;    |ALU:ALU0|                             ; 52 (52)           ; 10 (10)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |N8X300|ALU:ALU0                                                                   ; work         ;
 ;    |IO_latch:IO_latch0|                   ; 0 (0)             ; 0 (0)        ; 32          ; 0            ; 0       ; 0         ; 0    ; 0            ; |N8X300|IO_latch:IO_latch0                                                         ; work         ;
 ;       |altsyncram:LBA_reg[7]__1|          ; 0 (0)             ; 0 (0)        ; 32          ; 0            ; 0       ; 0         ; 0    ; 0            ; |N8X300|IO_latch:IO_latch0|altsyncram:LBA_reg[7]__1                                ; work         ;
@@ -373,18 +373,18 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
-; 3:1                ; 82 bits   ; 164 LEs       ; 82 LEs               ; 82 LEs                 ; Yes        ; |N8X300|latch_wren2                              ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |N8X300|decode_unit:decode_unit0|regf_w_reg[0]   ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |N8X300|decode_unit:decode_unit0|rotate_R_reg[0] ;
-; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |N8X300|decode_unit:decode_unit0|JMP             ;
-; 4:1                ; 41 bits   ; 82 LEs        ; 41 LEs               ; 41 LEs                 ; Yes        ; |N8X300|merge_D01[1]                             ;
+; 3:1                ; 73 bits   ; 146 LEs       ; 73 LEs               ; 73 LEs                 ; Yes        ; |N8X300|n_RB_w2                                  ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |N8X300|decode_unit:decode_unit0|regf_w_reg[1]   ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |N8X300|decode_unit:decode_unit0|rotate_R_reg[2] ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |N8X300|decode_unit:decode_unit0|XEC             ;
+; 4:1                ; 38 bits   ; 76 LEs        ; 38 LEs               ; 38 LEs                 ; Yes        ; |N8X300|alu_I_field1[2]                          ;
 ; 8:1                ; 8 bits    ; 40 LEs        ; 40 LEs               ; 0 LEs                  ; Yes        ; |N8X300|shift_merge:shift_merge0|merge_reg[0]    ;
 ; 8:1                ; 3 bits    ; 15 LEs        ; 6 LEs                ; 9 LEs                  ; Yes        ; |N8X300|decode_unit:decode_unit0|WC_reg          ;
 ; 8:1                ; 7 bits    ; 35 LEs        ; 21 LEs               ; 14 LEs                 ; Yes        ; |N8X300|ALU:ALU0|alu_reg[6]                      ;
-; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |N8X300|decode_unit:decode_unit0|I_reg[7]        ;
-; 5:1                ; 13 bits   ; 39 LEs        ; 26 LEs               ; 13 LEs                 ; Yes        ; |N8X300|PC:PC0|A_reg[7]                          ;
-; 6:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |N8X300|PC:PC0|PC_reg[7]                         ;
-; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |N8X300|right_rotate:right_rotate0|selected[7]   ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; Yes        ; |N8X300|decode_unit:decode_unit0|I_reg[8]        ;
+; 5:1                ; 13 bits   ; 39 LEs        ; 26 LEs               ; 13 LEs                 ; Yes        ; |N8X300|PC:PC0|A_reg[0]                          ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 24 LEs               ; 8 LEs                  ; Yes        ; |N8X300|PC:PC0|PC_reg[0]                         ;
+; 3:1                ; 7 bits    ; 14 LEs        ; 14 LEs               ; 0 LEs                  ; No         ; |N8X300|right_rotate:right_rotate0|selected[5]   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
 
 
@@ -462,7 +462,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II Analysis & Synthesis
     Info: Version 8.1 Build 163 10/28/2008 SJ Web Edition
-    Info: Processing started: Sat Oct 03 15:47:46 2020
+    Info: Processing started: Mon Oct 05 13:46:23 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 8X300_gen2 -c 8X300
 Info: Found 10 design units, including 10 entities, in source file toplevel.v
     Info: Found entity 1: N8X300
@@ -593,15 +593,15 @@ Info: 56 registers lost all their fanouts during netlist optimizations. The firs
     Info: Register "reg_file:reg_file0|rfile__dual~138" lost all its fanouts during netlist optimizations.
     Info: Register "reg_file:reg_file0|rfile__dual~140" lost all its fanouts during netlist optimizations.
     Info: Register "reg_file:reg_file0|rfile__dual~142" lost all its fanouts during netlist optimizations.
-Info: Implemented 906 device resources after synthesis - the final resource count might be different
+Info: Implemented 903 device resources after synthesis - the final resource count might be different
     Info: Implemented 27 input pins
     Info: Implemented 27 output pins
-    Info: Implemented 844 logic cells
+    Info: Implemented 841 logic cells
     Info: Implemented 8 RAM segments
 Info: Quartus II Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 170 megabytes
-    Info: Processing ended: Sat Oct 03 15:48:02 2020
+    Info: Processing ended: Mon Oct 05 13:46:39 2020
     Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:16
+    Info: Total CPU time (on all processors): 00:00:15
 
 

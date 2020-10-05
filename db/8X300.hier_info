@@ -485,6 +485,7 @@ clk => alu_reg[1].CLK
 clk => alu_reg[0].CLK
 clk => OVF_reg.CLK
 clk => NZ_reg.CLK
+flush => always0~0.IN1
 op[0] => Mux7.IN6
 op[0] => Mux6.IN6
 op[0] => Mux5.IN6

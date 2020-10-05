@@ -2,5 +2,5 @@
 A pipelined implementation of the 8X300 CPU
 
 * Change log:  
-  * Removed unnecessary logic from ALU.  
   * Fixed decoder flush logic in hazard unit.  
+  * Minor optimizations in top level and bug fix in ALU (Disable OVF by pipeline flush)  
